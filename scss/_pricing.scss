@@ -1,0 +1,89 @@
+.pricing {
+    padding: 45px 0;
+    background: url("../images/price/price-background.png");
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-color: #4b3b4e;
+
+    .container {
+        justify-items: center;
+        align-items: center;
+        gap: 14px;
+    }
+
+    h2 {
+        margin-bottom: 27px;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 1.25em;
+        font-family: "Montserrat-Bold";
+        color: #fff;
+    }
+}
+
+.pricing-item {
+    width: 257px;
+    height: 457px;
+    grid-template-rows: 99px repeat(3, 1fr) 80px;
+    text-align: center;
+    color: #fff;
+    background-color: #5f5161;
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 4.125em;
+        text-transform: uppercase;
+        background-color: #695c6e;
+    }
+
+    .pricing-item-price {
+        margin-top: 32px;
+        font-size: 3.761rem;
+        font-family: "Montserrat-Bold";
+    }
+
+    .pricing-item-period {
+        position: relative;
+        margin-top: 18px;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: #8f8691;
+
+        &::after {
+            content: url("../images/price/sep.png");
+            position: absolute;
+            top: 44px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .pricing-item-license {
+        justify-self: center;
+        max-width: 210px;
+        margin-top: 5px;
+        line-height: 1.75rem;
+    }
+
+    a {
+        justify-self: center;
+        align-self: start;
+        font-size: 0.938rem;
+        padding: 1em 2.4em;
+        border-radius: 1.4em;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Montserrat-Regular";
+        color: #fff;
+        background-color: #766b79;
+    }
+}
+
+.pricing-annotation {
+    margin-top: 27px;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #b5acb5;
+}

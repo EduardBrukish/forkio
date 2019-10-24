@@ -1,0 +1,76 @@
+.testimonials {
+    position: relative;
+    padding: 72px 0 22px;
+    background: url("../images/testimonials/testimonials-background.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-color: #4b3b4e;
+
+    &::after {
+        content: url("../images/testimonials/sep.png");
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h2 {
+        margin-bottom: 17px;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 1.25em;
+        font-family: "Montserrat-Bold";
+        color: #fff;
+    }
+
+    .company-feedback {
+        justify-content: center;
+
+        p {
+            max-width: 350px;
+            margin-bottom: 56px;
+            padding-top: 75px;
+            text-align: center;
+            box-sizing: border-box;
+            line-height: 1.5rem;
+            font-family: "Sourcesanspro-Bolditalic";
+            color: #fff;
+        }
+
+        .smashing {
+            background-image: url("../images/testimonials/logo-smashing.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        .codrops {
+            background-image: url("../images/testimonials/logo-codrops.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        .w {
+            background-image: url("../images/testimonials/logo-w.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        .pixelbuddha {
+            background-image: url("../images/testimonials/pixel-buddha.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        .creative {
+            background-image: url("../images/testimonials/creative-bloq.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        .tnw {
+            background-image: url("../images/testimonials/tnw.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+    }
+}

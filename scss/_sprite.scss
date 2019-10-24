@@ -1,0 +1,83 @@
+.sprite {
+    background-image: url("../images/sprite/spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Arrow-L {
+    width: 9px;
+    height: 16px;
+    background-position: 0 0;
+}
+
+.sprite-Arrow-R {
+    width: 9px;
+    height: 16px;
+    background-position: -9px 0;
+}
+
+.sprite-fork {
+    width: 18px;
+    height: 19px;
+    background-position: -18px 0;
+}
+
+.sprite-icon-facebook {
+    width: 8px;
+    height: 16px;
+    background-position: -36px 0;
+}
+
+.sprite-icon-github {
+    width: 20px;
+    height: 20px;
+    background-position: -44px 0;
+}
+
+.sprite-icon-twitter {
+    width: 19px;
+    height: 15px;
+    background-position: -64px 0;
+}
+
+.sprite-menu-cross {
+    width: 19px;
+    height: 19px;
+    background-position: -83px 0;
+}
+
+.sprite-menu-icon-facebook {
+    width: 24px;
+    height: 48px;
+    background-position: -102px 0;
+}
+
+.sprite-menu-icon-github {
+    width: 48px;
+    height: 48px;
+    background-position: -126px 0;
+}
+
+.sprite-menu-icon-twitter {
+    width: 48px;
+    height: 38px;
+    background-position: -174px 0;
+}
+
+.sprite-menu-sandwich {
+    width: 26px;
+    height: 21px;
+    background-position: -222px 0;
+}
+
+.sprite-star {
+    width: 21px;
+    height: 19px;
+    background-position: -248px 0;
+}
+
+.sprite-watch {
+    width: 21px;
+    height: 13px;
+    background-position: -269px 0;
+}
