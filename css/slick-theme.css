@@ -220,3 +220,47 @@
     opacity: .75;
     color: black;
 }
+
+
+@media (max-width: 460px) {
+
+    .slick-prev:before {
+        content: '';
+        display: none;
+    }
+
+    [dir='rtl'] .slick-prev:before {
+        content: '';
+        display: none;
+    }
+
+    .slick-next:before {
+        content: '';
+        display: none;
+    }
+
+    [dir='rtl'] .slick-next:before {
+        content: '';
+        display: none;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .slick-prev {
+        left: -56px;
+    }
+
+    .slick-next {
+        right: -69px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .slick-prev {
+        left: -106px;
+    }
+
+    .slick-next {
+        right: -119px;
+    }
+}

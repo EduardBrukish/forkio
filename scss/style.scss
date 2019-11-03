@@ -9,8 +9,7 @@ body {
     font-family: "Montserrat-Regular", sans-serif;
     font-size: 16px;
     overflow-x: hidden;
-
-    background-color: aqua;
+    background-color: #fff;
 }
 
 .grid {
@@ -35,10 +34,10 @@ header {
     left: 0;
     right: 0;
     height: 104px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 
     .container {
-        grid-template-columns: 1fr 1fr 80px;
+        grid-template-columns: 1fr 1fr 60px;
         align-items: center;
         justify-items: start;
         justify-content: space-between;
@@ -53,7 +52,7 @@ header {
 .btn-sale {
     align-items: center;
     justify-self: end;
-    margin-right: 10px;
+    margin-right: 31px;
     font-size: 1rem;
     height: 3em;
     padding: 0 2.3em;
@@ -158,6 +157,117 @@ header {
     }
 }
 
+@media (max-width: 400px) {
+
+    header {
+        .container {
+            grid-template-columns: 1fr 1fr 40px;
+        }
+    }
+
+    .navigation {
+        label {
+            display: block;
+            width: 27px;
+        }
+    }
+
+    .btn-sale {
+        height: 2.4em;
+        padding: 0 1em;
+        border-radius: 1.2em;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        .logo {
+            margin-left: 0;
+        }
+    }
+
+    .btn-sale {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .btn-sale {
+        justify-self: center;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1020px) {
+    .navigation label {
+        display: none;
+    }
+
+
+    header .container {
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    header .logo {
+        margin-left: 30px;
+    }
+
+    .btn-sale {
+        order: 3;
+        margin-right: 14px;
+        height: 2.4em;
+        padding: 0 2.2em;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        background-color: #fff;
+
+        >li {
+            padding: 0;
+            border-bottom: none;
+
+            &:first-child .menu-item,
+            &:last-child .menu-item {
+                display: none;
+            }
+        }
+
+        .menu-item {
+            display: inline-block;
+            width: 100%;
+            margin-left: 42px;
+            padding: 0;
+            font-size: 1rem;
+            line-height: 1.66em;
+            font-family: "Montserrat-Bold";
+            color: #4b3b4e;
+
+            &:hover,
+            &:active {
+                border-left: none;
+                margin-left: 42px;
+                color: #4b3b4e;
+            }
+        }
+
+        .social-icon {
+            display: none
+        }
+
+
+
+    }
+}
+
+@media (min-width: 1020px) and (max-width: 1200px) {
+    .menu {
+        margin-right: 42px;
+    }
+}
+
 // section promo
 
 @import "promo.scss";
@@ -181,3 +291,15 @@ header {
 // section pricing
 
 @import "pricing.scss";
+
+// section subscription
+
+@import "subscription.scss";
+
+//  section links
+
+@import "links.scss";
+
+// section footer
+
+@import "footer.scss";

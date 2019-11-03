@@ -1,15 +1,9 @@
 .pricing {
-    padding: 45px 0;
+    padding: 45px 0 32px;
     background: url("../images/price/price-background.png");
     background-position: center 30%;
     background-repeat: no-repeat;
     background-color: #4b3b4e;
-
-    .container {
-        justify-items: center;
-        align-items: center;
-        gap: 14px;
-    }
 
     h2 {
         margin-bottom: 27px;
@@ -21,9 +15,15 @@
     }
 }
 
+.pricing-block {
+    flex-direction: column;
+    align-items: center;
+}
+
 .pricing-item {
     width: 257px;
     height: 457px;
+    margin: 7px;
     grid-template-rows: 99px repeat(3, 1fr) 80px;
     text-align: center;
     color: #fff;
@@ -77,13 +77,86 @@
         color: #fff;
         background-color: #766b79;
     }
+
+    &:hover {
+        width: 300px;
+        height: 560px;
+        box-sizing: border-box;
+        border: solid 8px #82769d;
+        background-color: #413344;
+        transition: .3s;
+
+        h3 {
+            height: 107px;
+            background-color: #392d3d;
+            transition: .3s;
+        }
+
+        .pricing-item-price {
+            font-size: 5.125rem;
+            transition: .3s;
+        }
+
+        a {
+            font-size: 1rem;
+            transition: .3s;
+        }
+    }
 }
 
 .pricing-annotation {
-    margin-top: 27px;
-    padding: 0 40px;
+    justify-self: center;
+    padding: 27px 40px 0;
+    max-width: 870px;
     text-align: center;
     font-size: 0.875rem;
     line-height: 1.5em;
     color: #b5acb5;
+}
+
+
+@media (max-width: 360px) {
+
+    .pricing-item:hover {
+        width: 290px;
+        height: 530px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .pricing {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 735px) {
+
+    .pricing-block {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .pricing {
+        padding: 35px 0 78px;
+
+
+        h2 {
+            margin-bottom: 108px;
+        }
+    }
+
+    .pricing-item {
+        margin-bottom: 103px;
+    }
+
+    .pricing-annotation {
+        font-size: 0.75rem;
+    }
 }

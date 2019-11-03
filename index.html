@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="icon" href="./favicon.png" size="16x16">
@@ -47,7 +47,7 @@
         <section class="promo">
             <div class="container grid">
                 <h1>Fork App</h1>
-                <h2>A Real Gamechanger In The World Of Web-Development</h2>
+                <h2>A real gamechanger in the world of web development</h2>
                 <p>v. 2.8 For Mac and Windows</p>
             </div>
             <div class="hero flex">
@@ -59,7 +59,9 @@
                     vulputate dignissim. Sed id
                     metus id quam auctor molestie eget ut augue. </p>
                 <ul class="github-stat flex">
-                    <li class="flex"><a href="#"><span class="watch">Watch</span><span>1,397</span></a></li>
+                    <li class="flex">
+                        <a href="#"><span class="watch">Watch</span><span>1,397</span></a>
+                    </li>
                     <li class="flex"><a href="#"><span class="star">Star</span><span>21,038</span></a></li>
                     <li class="flex"><a href="#"><span class="fork">Fork</span><span>4,391</span></a></li>
                 </ul>
@@ -68,7 +70,7 @@
         <section class="features">
             <div class="container grid">
                 <h2>&lt;Here is what you get&gt;</h2>
-                <ul>
+                <ul class="features-about">
                     <li class="created">
                         <h3>Creatred to Make The Web Better</h3>
                         <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim.
@@ -147,7 +149,7 @@
         <section class="testimonials">
             <div class="container">
                 <h2>People Are Talking About Fork</h2>
-                <div class="company-feedback grid">
+                <div class="company-feedback flex">
                     <p class="smashing">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
                         dignissim magna. Sed
                         varius urna et pulvinar venenatis. </p>
@@ -171,35 +173,36 @@
         <section class="pricing">
             <div class="container grid">
                 <h2>Fork Subscription Pricing</h2>
-                <div class="pricing-item grid">
-                    <h3>Students</h3>
-                    <p class="pricing-item-price">$29</p>
-                    <p class="pricing-item-period">per month</p>
-                    <p class="pricing-item-license">Personal License</p>
-                    <a href="#">purchase</a>
+                <div class="pricing-block flex">
+                    <div class="pricing-item grid">
+                        <h3>Students</h3>
+                        <p class="pricing-item-price">$29</p>
+                        <p class="pricing-item-period">per month</p>
+                        <p class="pricing-item-license">Personal License</p>
+                        <a href="#">purchase</a>
+                    </div>
+                    <div class="pricing-item grid">
+                        <h3>professional</h3>
+                        <p class="pricing-item-price">$59</p>
+                        <p class="pricing-item-period">per month</p>
+                        <p class="pricing-item-license">Professional License Email Support</p>
+                        <a href="#">purchase</a>
+                    </div>
+                    <div class="pricing-item grid">
+                        <h3>agency</h3>
+                        <p class="pricing-item-price">$99</p>
+                        <p class="pricing-item-period">per month</p>
+                        <p class="pricing-item-license">1-12 Team Members Phone Support</p>
+                        <a href="#">purchase</a>
+                    </div>
+                    <div class="pricing-item grid">
+                        <h3>enterprise</h3>
+                        <p class="pricing-item-price">$159</p>
+                        <p class="pricing-item-period">per month</p>
+                        <p class="pricing-item-license">Unlimited Team Members 24/ 7 Phone Support</p>
+                        <a href="#">purchase</a>
+                    </div>
                 </div>
-                <div class="pricing-item grid">
-                    <h3>professional</h3>
-                    <p class="pricing-item-price">$59</p>
-                    <p class="pricing-item-period">per month</p>
-                    <p class="pricing-item-license">Professional License Email Support</p>
-                    <a href="#">purchase</a>
-                </div>
-                <div class="pricing-item grid">
-                    <h3>agency</h3>
-                    <p class="pricing-item-price">$99</p>
-                    <p class="pricing-item-period">per month</p>
-                    <p class="pricing-item-license">1-12 Team Members Phone Support</p>
-                    <a href="#">purchase</a>
-                </div>
-                <div class="pricing-item grid">
-                    <h3>enterprise</h3>
-                    <p class="pricing-item-price">$159</p>
-                    <p class="pricing-item-period">per month</p>
-                    <p class="pricing-item-license">Unlimited Team Members 24/ 7 Phone Support</p>
-                    <a href="#">purchase</a>
-                </div>
-
                 <p class="pricing-annotation">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
                     facilisis vitae aliquet id,
                     imperdiet
@@ -207,7 +210,124 @@
                     penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
             </div>
         </section>
+        <section class="subscription">
+            <div class="container">
+                <h2>Subscribe To Stay In Touch</h2>
+                <form class="grid" action="">
+                    <input type="text" placeholder="Your Name...">
+                    <input type="email" placeholder="Your Email...">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </section>
+        <section class="links">
+            <div class="container flex">
+                <div class="links-section">
+                    <h3>New in Release 2.8</h3>
+                    <ul class="links-section-release">
+                        <li>
+                            <h4>Fully Available: Live Preview Support for Multiple Browsers</h4>
+                            <p>Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor tortor at odio
+                                condimentum, sit amet fringilla ligula maximus. Mauris venenatis nisl nisi, et dictum
+                                dui
+                                aliquet nec. Sed erat, nec aliquam vel, aliquam ac felis. </p>
+                        </li>
+                        <li>
+                            <h4>Improved Support for Typing </h4>
+                            <p>Nulla purus quam, pulvinar sed ante et, feugiat maximus velit. Donec eu elit mauris. </p>
+                        </li>
+                        <li>
+                            <h4>Improved Stability</h4>
+                            <p>Proin id ligula eget massa tincidunt molestie. Morbi urna lectus, molestie vel quam vel,
+                                iaculis fermentum nunc. Morbi imperdiet, leo in interdum pretium.</p>
+                        </li>
+                    </ul>
+                    <a class="links-section-btn" href="#">Go to Release Log</a>
+                </div>
+                <div class="links-section">
+                    <h3>Popular Extensions</h3>
+                    <ul class="links-section-extensions">
+                        <li>
+                            <a href="#">Custom Themes 1.1</a>
+                            <p>Etiam viverra vulputate diam, pulvinar cursus augue egestas ullamcorper.</p>
+                        </li>
+                        <li>
+                            <a href="#">Filter Forge</a>
+                            <p>Nulla purus quam, pulvinar sed et, feugiat maximus velit.</p>
+                        </li>
+                        <li>
+                            <a href="#">WebZap</a>
+                            <p>Morbi imperdiet, leo in interdum pretium, elit eros dapibus velit, eu posuere quam diam
+                                vitae
+                                orci. Suspendisse interdum accumsan magna vitae commodo.</p>
+                        </li>
+                        <li>
+                            <a href="#">Renamy</a>
+                            <p>Vivamus consectetur suscipit elit, ut lacinia diam elementum et.</p>
+                        </li>
+                    </ul>
+                    <a class="links-section-btn" href="#">Go to Marketplace</a>
+                </div>
+                <div class="links-section">
+                    <h3>New From the Blog</h3>
+                    <ul class="links-blog">
+                        <li>
+                            <a href="">Morbi imperdiet, leo in interdum pretium.</a>
+                            <p>February 18, 2015</p>
+                        </li>
+                        <li>
+                            <a href="">Donec orci ante, porta vel nulla quis, aliquet.</a>
+                            <p>February 12, 2015</p>
+                        </li>
+                        <li>
+                            <a href="">Suspendisse egestas vulputate luctus.</a>
+                            <p>February 6, 2015</p>
+                        </li>
+                        <li>
+                            <a href="">Quisque varius ante lorem, eget pretium purus hendrerit a egestas. </a>
+                            <p>February 2, 2015</p>
+                        </li>
+                        <li>
+                            <a href="">Phasellus in augue risus. </a>
+                            <p>January 23, 2015</p>
+                        </li>
+                    </ul>
+                    <a class="links-section-btn" href="#">Go to Blog</a>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container grid">
+            <div class="footer-item">
+                <a class="footer-logotype" href="#"><img src="./images/logo/logo.png" alt="Logotype"></a>
+                <p class="footer-logotype-anotation">Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no
+                    quo.</p>
+            </div>
+            <div class="footer-item">
+                <h4>Navigation</h4>
+                <ul class="footer-navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Buying Options</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <p class="phone">347 567 78 90</p>
+                <p class="phone-anotation">AVAILABLE AT 12PM - 18PM</p>
+                <h4>New York, NY</h4>
+                <p class="addres">560 Judah St & 15th Ave, Apt 5 San Francisco, CA, 230903</p>
+            </div>
+            <div class="footer-item info">
+                <h4>Info</h4>
+                <p>Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                    ex
+                    commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.</p>
+            </div>
+        </div>
+    </footer>
     <script src="./js/jquery.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
