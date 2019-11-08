@@ -1,22 +1,22 @@
 .promo {
-    padding-top: 104px;
+    padding: 187px 0 558px;
     background-image: url("../images/promo/promo-background.png");
-    background-position: center 24%;
+    background-position: center 123px;
     background-repeat: no-repeat;
     background-color: #010005;
 
     .container {
-
         justify-items: center;
-        padding: 82px 15px 560px 15px;
 
         h2 {
-            text-align: center;
-            margin-bottom: 12px;
-            font-size: 1.5rem;
-            line-height: 1.417em;
-            text-transform: capitalize;
-            color: $corp-color;
+            margin-bottom: 19px;
+            font-family: "Montserrat-Bold";
+            font-size: 5.125rem;
+            color: #fff;
+            background: linear-gradient(to top, rgba(0, 5, 5, 0.5) -100%, rgba(255, 255, 255, 1) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         p {
@@ -27,48 +27,48 @@
 }
 
 h1 {
-    margin-bottom: 19px;
-    font-family: "Montserrat-Bold";
-    font-size: 5.125rem;
-    color: #fff;
-    background: linear-gradient(to top, rgba(0, 5, 5, 0.5) -100%, rgba(255, 255, 255, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    line-height: 1.417em;
+    text-transform: capitalize;
+    color: $corp-color;
 }
+
+
 
 @media (max-width: 355px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 1.2rem;
     }
 
     .promo .container h2 {
-        font-size: 1.2rem;
+        font-size: 3.5rem;
     }
 }
 
 @media (min-width: 355px) and (max-width: 425px) {
-    h1 {
+    .promo .container h2 {
         font-size: 4rem;
     }
 }
 
 @media (min-width: 900px) {
     .promo {
-        background-position: center 20%;
+        padding: 173px 0 613px;
+        background-position: center;
 
 
-        .container {
-            padding: 103px 15px 612px 15px;
-
-            h2 {
-                font-size: 1.875rem;
-                text-transform: none;
-            }
+        .container h2 {
+            margin-bottom: 11px;
         }
+
     }
+
 
     h1 {
-        margin-bottom: 11px;
+        font-size: 1.875rem;
+        text-transform: none;
     }
+
 }

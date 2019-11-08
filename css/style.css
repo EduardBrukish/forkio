@@ -503,7 +503,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 104px;
+  height: 70px;
   background-color: white;
 }
 header .container {
@@ -512,6 +512,7 @@ header .container {
   justify-items: start;
   justify-content: space-between;
   height: 100%;
+  max-width: 1380px;
 }
 header .logo {
   margin-left: 10px;
@@ -529,17 +530,24 @@ header .logo {
   background-color: #8d81ac;
   color: #fff;
 }
+.btn-sale:hover {
+  box-shadow: inset 0 0 8px #333;
+}
+.btn-sale:active {
+  position: relative;
+  top: 1px;
+}
 
 .menu {
-  display: none;
-  position: absolute;
-  top: 104px;
-  left: 0;
-  right: 0;
+  position: fixed;
+  top: 70px;
+  right: -1050px;
+  width: 100%;
   background-color: #333;
+  transition: 0.5s ease-in-out;
 }
 .menu > li {
-  padding: 27px 5px;
+  padding: 12px 5px;
   border-bottom: solid 2px #3b3b3b;
 }
 .menu > li:last-child {
@@ -551,7 +559,7 @@ header .logo {
 .menu .menu-item {
   display: inline-block;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding: 0 0.9em;
   line-height: 1.66em;
   color: #fff;
@@ -563,8 +571,8 @@ header .logo {
 }
 .menu .social-icon {
   grid-template-columns: repeat(3, 50px);
-  grid-gap: 48px;
-  padding: 21px 29px 32px;
+  grid-gap: 10px;
+  padding: 0 8px;
 }
 .menu .social-icon a, .menu .social-icon .social-btn .social-btn-item .social-btn-facebook, .social-btn .social-btn-item .menu .social-icon .social-btn-facebook, .menu .social-icon .social-btn .social-btn-item .social-btn-twitter, .social-btn .social-btn-item .menu .social-icon .social-btn-twitter, .menu .social-icon .social-btn .social-btn-item .social-btn-github, .social-btn .social-btn-item .menu .social-icon .social-btn-github {
   display: inline-block;
@@ -575,14 +583,17 @@ header .logo {
 .menu .social-icon .icon-github {
   width: 48px;
   background-position: -126px 0;
+  transform: scale(0.6);
 }
 .menu .social-icon .icon-twitter {
   width: 48px;
   background-position: -174px 5px;
+  transform: scale(0.6);
 }
 .menu .social-icon .icon-facebook {
   width: 24px;
   background-position: -102px 0;
+  transform: scale(0.6);
 }
 
 .menu-bar {
@@ -596,13 +607,9 @@ header .logo {
   display: block;
   width: 50px;
   height: 34px;
-  border-left: solid 1px #f4f4f4;
   background-image: url("../images/header/menu-sandwich.png");
   background-repeat: no-repeat;
   background-position: center;
-}
-.navigation input:checked ~ .menu {
-  display: block;
 }
 .navigation input:checked + label {
   background-image: url("../images/header/menu-cross.png");
@@ -642,7 +649,7 @@ header .logo {
     margin-right: 0;
   }
 }
-@media (min-width: 1020px) {
+@media (min-width: 1030px) {
   .navigation label {
     display: none;
   }
@@ -662,23 +669,37 @@ header .logo {
     padding: 0 2.2em;
   }
 
+  .navigation {
+    height: 100%;
+  }
+
   .menu {
     display: flex;
     position: static;
+    height: 100%;
     background-color: #fff;
   }
   .menu > li {
+    height: 100%;
     padding: 0;
-    border-bottom: none;
+    box-sizing: border-box;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  }
+  .menu > li:hover {
+    border-top-color: #4b3b4e;
+    transition: border-top 0.3s ease;
   }
   .menu > li:first-child .menu-item, .menu > li:last-child .menu-item {
     display: none;
   }
   .menu .menu-item {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 100%;
-    margin-left: 42px;
-    padding: 0;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
     font-size: 1rem;
     line-height: 1.66em;
     font-family: "Montserrat-Bold";
@@ -686,43 +707,29 @@ header .logo {
   }
   .menu .menu-item:hover, .menu .menu-item:active {
     border-left: none;
-    margin-left: 42px;
     color: #4b3b4e;
+    margin-left: 0;
   }
   .menu .social-icon {
     display: none;
   }
 }
-@media (min-width: 1020px) and (max-width: 1200px) {
+@media (min-width: 1030px) and (max-width: 1200px) {
   .menu {
     margin-right: 42px;
   }
 }
 .promo {
-  padding-top: 104px;
+  padding: 187px 0 558px;
   background-image: url("../images/promo/promo-background.png");
-  background-position: center 24%;
+  background-position: center 123px;
   background-repeat: no-repeat;
   background-color: #010005;
 }
 .promo .container {
   justify-items: center;
-  padding: 82px 15px 560px 15px;
 }
 .promo .container h2 {
-  text-align: center;
-  margin-bottom: 12px;
-  font-size: 1.5rem;
-  line-height: 1.417em;
-  text-transform: capitalize;
-  color: #8d81ac;
-}
-.promo .container p {
-  text-transform: uppercase;
-  color: #848e97;
-}
-
-h1 {
   margin-bottom: 19px;
   font-family: "Montserrat-Bold";
   font-size: 5.125rem;
@@ -732,45 +739,58 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.promo .container p {
+  text-transform: uppercase;
+  color: #848e97;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  line-height: 1.417em;
+  text-transform: capitalize;
+  color: #8d81ac;
+}
 
 @media (max-width: 355px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 1.2rem;
   }
 
   .promo .container h2 {
-    font-size: 1.2rem;
+    font-size: 3.5rem;
   }
 }
 @media (min-width: 355px) and (max-width: 425px) {
-  h1 {
+  .promo .container h2 {
     font-size: 4rem;
   }
 }
 @media (min-width: 900px) {
   .promo {
-    background-position: center 20%;
-  }
-  .promo .container {
-    padding: 103px 15px 612px 15px;
+    padding: 173px 0 613px;
+    background-position: center;
   }
   .promo .container h2 {
-    font-size: 1.875rem;
-    text-transform: none;
+    margin-bottom: 11px;
   }
 
   h1 {
-    margin-bottom: 11px;
+    font-size: 1.875rem;
+    text-transform: none;
   }
 }
 .hero {
+  margin-top: -79px;
+  padding-bottom: 60px;
+  background-color: #fff;
+}
+.hero .container {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 15px 60px;
-  margin: -79px auto 0;
   box-sizing: border-box;
-  background-color: #fff;
 }
 .hero h2 {
   margin-bottom: 36px;
@@ -793,6 +813,13 @@ h1 {
   border-radius: 1.5em;
   background-color: #8d81ac;
   color: #fff;
+}
+.btn-download:hover {
+  box-shadow: inset 0 0 8px #333;
+}
+.btn-download:active {
+  position: relative;
+  top: 1px;
 }
 
 .trial-period {
@@ -1337,6 +1364,7 @@ h1 {
 .pricing-block {
   flex-direction: column;
   align-items: center;
+  justify-self: center;
 }
 
 .pricing-item {
@@ -1347,6 +1375,13 @@ h1 {
   text-align: center;
   color: #fff;
   background-color: #5f5161;
+}
+.pricing-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #766b79;
+  border: solid 6px #82769d;
+  margin: 0;
+  transition: 0.3s;
 }
 .pricing-item h3 {
   font-size: 1.5rem;
@@ -1391,27 +1426,6 @@ h1 {
   color: #fff;
   background-color: #766b79;
 }
-.pricing-item:hover {
-  width: 300px;
-  height: 560px;
-  box-sizing: border-box;
-  border: solid 8px #82769d;
-  background-color: #413344;
-  transition: 0.3s;
-}
-.pricing-item:hover h3 {
-  height: 107px;
-  background-color: #392d3d;
-  transition: 0.3s;
-}
-.pricing-item:hover .pricing-item-price {
-  font-size: 5.125rem;
-  transition: 0.3s;
-}
-.pricing-item:hover a, .pricing-item:hover .social-btn .social-btn-item .social-btn-github, .social-btn .social-btn-item .pricing-item:hover .social-btn-github, .pricing-item:hover .social-btn .social-btn-item .social-btn-twitter, .social-btn .social-btn-item .pricing-item:hover .social-btn-twitter, .pricing-item:hover .social-btn .social-btn-item .social-btn-facebook, .social-btn .social-btn-item .pricing-item:hover .social-btn-facebook {
-  font-size: 1rem;
-  transition: 0.3s;
-}
 
 .pricing-annotation {
   justify-self: center;
@@ -1423,12 +1437,6 @@ h1 {
   color: #b5acb5;
 }
 
-@media (max-width: 360px) {
-  .pricing-item:hover {
-    width: 290px;
-    height: 530px;
-  }
-}
 @media (max-width: 460px) {
   .pricing h2 {
     font-size: 2rem;
@@ -1437,8 +1445,13 @@ h1 {
 @media (min-width: 735px) {
   .pricing-block {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 735px) and (max-width: 1130px) {
+  .pricing-block {
+    max-width: 600px;
   }
 }
 @media (min-width: 1120px) {
@@ -1447,10 +1460,6 @@ h1 {
   }
   .pricing h2 {
     margin-bottom: 108px;
-  }
-
-  .pricing-item {
-    margin-bottom: 103px;
   }
 
   .pricing-annotation {
@@ -1478,8 +1487,14 @@ h1 {
   display: inline-block;
   width: 100%;
   height: 42px;
+  padding: 0 20px;
+  box-sizing: border-box;
   border: none;
   border-radius: 21px;
+  font-size: 0.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
+  color: #5a5a5a;
 }
 .subscription form input[type=submit] {
   display: inline-block;
@@ -1488,6 +1503,8 @@ h1 {
   border: none;
   border-radius: 21px;
   font-size: 0.813rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
   text-transform: uppercase;
   background-color: #8d81ac;
   color: #fff;
@@ -1506,9 +1523,15 @@ h1 {
   margin-bottom: 43px;
   padding: 0 15px;
 }
+.links-section:nth-child(even) {
+  background-color: #f4f4f4;
+  margin: 0 -15px 17px;
+  padding: 0 30px;
+}
 .links-section h3 {
-  margin-bottom: 28px;
+  margin-bottom: 14px;
   font-size: 1.75rem;
+  line-height: 2em;
   font-family: "Montserrat-Bold";
   color: #d3d1da;
 }
@@ -1539,8 +1562,12 @@ h1 {
 .links-section .links-section-btn {
   font-size: 0.875rem;
   padding: 0.5em 1em;
-  background-color: #f4f4f4;
+  background-color: #e6e6e6;
   border-radius: 0.15em;
+}
+.links-section .links-section-btn:hover {
+  font-size: 0.875rem;
+  box-shadow: inset 0 0 8px #bbbbbb;
 }
 .links-section .links-section-extensions li {
   margin-bottom: 28px;

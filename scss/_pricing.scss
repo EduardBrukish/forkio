@@ -18,6 +18,7 @@
 .pricing-block {
     flex-direction: column;
     align-items: center;
+    justify-self: center;
 }
 
 .pricing-item {
@@ -28,6 +29,14 @@
     text-align: center;
     color: #fff;
     background-color: #5f5161;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 30px #766b79;
+        border: solid 6px #82769d;
+        margin: 0;
+        transition: 0.3s;
+    }
 
     h3 {
         font-size: 1.5rem;
@@ -77,31 +86,6 @@
         color: #fff;
         background-color: #766b79;
     }
-
-    &:hover {
-        width: 300px;
-        height: 560px;
-        box-sizing: border-box;
-        border: solid 8px #82769d;
-        background-color: #413344;
-        transition: .3s;
-
-        h3 {
-            height: 107px;
-            background-color: #392d3d;
-            transition: .3s;
-        }
-
-        .pricing-item-price {
-            font-size: 5.125rem;
-            transition: .3s;
-        }
-
-        a {
-            font-size: 1rem;
-            transition: .3s;
-        }
-    }
 }
 
 .pricing-annotation {
@@ -115,13 +99,13 @@
 }
 
 
-@media (max-width: 360px) {
+// @media (max-width: 360px) {
 
-    .pricing-item:hover {
-        width: 290px;
-        height: 530px;
-    }
-}
+//     .pricing-item:hover {
+//         width: 290px;
+//         height: 530px;
+//     }
+// }
 
 @media (max-width: 460px) {
 
@@ -136,8 +120,14 @@
 
     .pricing-block {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 735px) and (max-width: 1130px) {
+    .pricing-block {
+        max-width: 600px;
     }
 }
 
@@ -150,10 +140,6 @@
         h2 {
             margin-bottom: 108px;
         }
-    }
-
-    .pricing-item {
-        margin-bottom: 103px;
     }
 
     .pricing-annotation {
