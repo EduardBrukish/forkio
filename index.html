@@ -16,7 +16,7 @@
     <header>
         <div class="container grid">
             <a class="logo" href="#"><img src="./images/logo/logo.png" alt="ForkApp"></a>
-            <a class="btn-sale grid" href="#">Buy Now</a>
+            <a class="btn-sale grid" href="#pricing">Buy Now</a>
             <nav class="navigation">
                 <input class="menu-bar" type="checkbox" id="menu-bar">
                 <label for="menu-bar"> </label>
@@ -46,7 +46,7 @@
     <main>
         <section class="promo">
             <div class="container grid">
-                <h2>Fork App</h2>
+                <h2 id="home">Fork App</h2>
                 <h1>A real gamechanger in the world of web development</h1>
                 <p>v. 2.8 For Mac and Windows</p>
             </div>
@@ -95,11 +95,11 @@
                     </li>
                 </ul>
                 <div class="example">
-                    <img src="./images/features/code.png" alt="example">
+                    <img src="./images/features/code.webp" alt="example">
                 </div>
             </div>
         </section>
-        <section class="social">
+        <section class="social" id="social">
             <div class="container">
                 <div class="slider">
                     <div>
@@ -150,31 +150,36 @@
         </section>
         <section class="testimonials">
             <div class="container">
-                <h2>People Are Talking About Fork</h2>
+                <h2 id="about">People Are Talking About Fork</h2>
                 <div class="company-feedback flex">
-                    <p class="smashing">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
+                    <p class="company-smashing">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                        Proin id
                         dignissim magna. Sed
                         varius urna et pulvinar venenatis. </p>
-                    <p class="codrops">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie
+                    <p class="company-codrops">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus
+                        molestie
                         neque ac, mollis
                         eleifend nibh.</p>
-                    <p class="w">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla,
+                    <p class="company-w">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat
+                        fringilla,
                         imperdiet nibh.
                         Morbi tempus auctor felis ac vehicula. </p>
-                    <p class="pixelbuddha">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
+                    <p class="company-pixelbuddha">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                        Proin id
                         dignissim magna. Sed
                         varius urna et pulvinar venenatis. </p>
-                    <p class="creative">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus
+                    <p class="company-creative">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla
+                        faucibus
                         lorem id arcu
                         consequat faucibus. </p>
-                    <p class="tnw">Fusce pharetra erat id odio blandit, nec
+                    <p class="company-tnw">Fusce pharetra erat id odio blandit, nec
                         pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
                 </div>
             </div>
         </section>
-        <section class="pricing" id="pricing">
+        <section class="pricing">
             <div class="container grid">
-                <h2>Fork Subscription Pricing</h2>
+                <h2 id="pricing">Fork Subscription Pricing</h2>
                 <div class="pricing-block flex">
                     <div class="pricing-item grid">
                         <h3>Students</h3>
@@ -213,9 +218,9 @@
             </div>
         </section>
         <section class="subscription">
-            <div class="container">
+            <div class="container grid">
                 <h2>Subscribe To Stay In Touch</h2>
-                <form class="grid" action="">
+                <form class="grid" action="" method="POST">
                     <input type="text" placeholder="Your Name...">
                     <input type="email" placeholder="Your Email...">
                     <input type="submit" value="Subscribe">

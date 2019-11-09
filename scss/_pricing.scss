@@ -1,12 +1,12 @@
 .pricing {
     padding: 45px 0 32px;
-    background: url("../images/price/price-background.png");
+    background: url("../images/price/price-background.webp");
     background-position: center 30%;
     background-repeat: no-repeat;
     background-color: #4b3b4e;
 
     h2 {
-        margin-bottom: 27px;
+        margin-bottom: 36px;
         text-align: center;
         font-size: 3rem;
         line-height: 1.25em;
@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-self: center;
+    margin-bottom: 31px;
 }
 
 .pricing-item {
@@ -90,7 +91,7 @@
 
 .pricing-annotation {
     justify-self: center;
-    padding: 27px 40px 0;
+    padding: 0 40px;
     max-width: 870px;
     text-align: center;
     font-size: 0.875rem;

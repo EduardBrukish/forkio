@@ -45,3 +45,27 @@
         }
     }
 }
+
+@media (max-width: 460px) {
+    .subscription form {
+        grid-template-columns: 1fr;
+
+        input[type="submit"] {
+            max-width: 50%;
+            justify-self: start;
+        }
+    }
+}
+
+@media (min-width: 1030px) {
+    .subscription {
+        .container {
+            grid-template-columns: 1fr 1fr;
+            max-width: 1280px;
+        }
+
+        h2 {
+            color: $corp-color;
+        }
+    }
+}

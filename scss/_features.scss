@@ -1,10 +1,10 @@
 .features {
-    padding: 46px 0 0;
+    padding-top: 36px;
     background-color: #f4f4f4;
 
     h2 {
         max-width: 445px;
-        margin-bottom: 57px;
+        margin-bottom: 55px;
         justify-self: center;
         text-align: center;
         font-family: "Montserrat-Bold";
@@ -14,7 +14,7 @@
     }
 
     .features-about {
-        margin-bottom: 11px;
+        margin-bottom: 17px;
         padding-left: 11px;
 
         .created {
@@ -44,7 +44,7 @@
         }
 
         h3 {
-            margin-bottom: 13px;
+            margin-bottom: 4px;
             line-height: 1.5rem;
             font-weight: 800;
             color: #323232;
@@ -146,30 +146,30 @@
     }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1185px) {
     .features {
 
         .features-about {
-            justify-self: end;
+            justify-self: center;
+
+            p {
+                font-size: 1rem;
+            }
         }
 
         h2 {
             justify-self: start;
+            margin-bottom: 6px;
         }
 
         .example {
             justify-self: start;
-        }
-    }
-}
-
-@media (min-width: 1180px) {
-    .features .example {
-        width: 100%;
-
-        img {
             width: 100%;
-            height: 50vw;
+
+            img {
+                width: 100%;
+                height: 50vw;
+            }
         }
     }
 }

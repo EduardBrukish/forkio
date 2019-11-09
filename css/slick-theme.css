@@ -135,7 +135,7 @@
 
 /* Dots */
 .slick-dotted.slick-slider {
-    margin-bottom: 30px;
+    margin-bottom: 56px;
 }
 
 .slick-dots {
@@ -262,5 +262,9 @@
 
     .slick-next {
         right: -119px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 113px;
     }
 }
