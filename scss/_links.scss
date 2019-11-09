@@ -50,6 +50,11 @@
         line-height: 1.625rem;
         font-weight: 600;
         color: $corp-color;
+
+        &:hover {
+            color: #635c73;
+            transition: .3s ease;
+        }
     }
 
     .links-section-release {

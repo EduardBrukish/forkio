@@ -36,7 +36,7 @@
 
             document.getElementById(blockID).scrollIntoView({
                 behavior: 'smooth',
-                block: 'center'
+                block: 'start'
             })
         })
     }

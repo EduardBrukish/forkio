@@ -173,3 +173,16 @@
         }
     }
 }
+
+
+@media (min-width: 1500px) {
+    .features .example img {
+        height: 40vw;
+    }
+
+    .features .features-about {
+        justify-self: end;
+        margin-right: 50px;
+    }
+
+}

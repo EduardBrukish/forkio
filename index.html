@@ -44,9 +44,9 @@
         </div>
     </header>
     <main>
-        <section class="promo">
+        <section class="promo" id="home">
             <div class="container grid">
-                <h2 id="home">Fork App</h2>
+                <h2>Fork App</h2>
                 <h1>A real gamechanger in the world of web development</h1>
                 <p>v. 2.8 For Mac and Windows</p>
             </div>
@@ -221,8 +221,8 @@
             <div class="container grid">
                 <h2>Subscribe To Stay In Touch</h2>
                 <form class="grid" action="" method="POST">
-                    <input type="text" placeholder="Your Name...">
-                    <input type="email" placeholder="Your Email...">
+                    <input type="text" placeholder="Your Name..." required>
+                    <input type="email" placeholder="Your Email..." required>
                     <input type="submit" value="Subscribe">
                 </form>
             </div>
@@ -314,15 +314,15 @@
             <div class="footer-item">
                 <h4>Navigation</h4>
                 <ul class="footer-navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Buying Options</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Buying Options</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </div>
             <div class="footer-item">
-                <p class="phone">347 567 78 90</p>
+                <a href="tel:347-567-78-90" class="phone">347 567 78 90</a>
                 <p class="phone-anotation">AVAILABLE AT 12PM - 18PM</p>
                 <h4>New York, NY</h4>
                 <p class="addres">560 Judah St & 15th Ave, Apt 5 San Francisco, CA, 230903</p>

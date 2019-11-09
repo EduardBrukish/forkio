@@ -86,6 +86,18 @@
         font-family: "Montserrat-Regular";
         color: #fff;
         background-color: #766b79;
+
+
+        &:hover {
+            box-shadow: 0 0 8px #333;
+            transition: .3s ease;
+        }
+
+        &:active {
+            position: relative;
+            top: 1px;
+            transition: .3s ease;
+        }
     }
 }
 
@@ -98,15 +110,6 @@
     line-height: 1.5em;
     color: #b5acb5;
 }
-
-
-// @media (max-width: 360px) {
-
-//     .pricing-item:hover {
-//         width: 290px;
-//         height: 530px;
-//     }
-// }
 
 @media (max-width: 460px) {
 
