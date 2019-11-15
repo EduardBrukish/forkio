@@ -31,11 +31,13 @@
     padding: 0 2.9em;
     font-family: "Montserrat-Bold";
     border-radius: 1.5em;
+    background: linear-gradient(to bottom, $corp-color 5%, #7e7499 100%);
     background-color: $corp-color;
     color: #fff;
 
     &:hover {
-        box-shadow: inset 0 0 8px #333;
+        background: linear-gradient(to bottom, #7e7499 5%, $corp-color 100%);
+        background-color: #7e7499;
         transition: .3s ease;
     }
 

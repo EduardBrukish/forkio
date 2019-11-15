@@ -7,26 +7,48 @@
     });
 
     let menuShow = document.querySelector('.menu-bar');
+    let bodyOverflow = document.querySelector('body');
+    let menuShadow = document.querySelector('.menushadow');
+    let menu = document.querySelector('.menu')
+    let btnSale = document.querySelector('.btn-sale')
+
+    menuShow.addEventListener('click', menuFunction);
 
     function menuFunction() {
         if (menuShow.checked) {
-            document.querySelector('.menu').style.right = '0';
+            menu.style.right = '0';
+
+            bodyOverflow.style.overflowY = 'hidden';
+
+            menuShadow.style.right = '0';
+
+            btnSale.addEventListener('click', hidden);
+
             let links = document.querySelectorAll('.menu-item');
+
             for (let link of links) {
                 link.addEventListener('click', hidden);
             }
         } else {
-            document.querySelector('.menu').style.right = '-1050px';
+            menu.style.right = '-1050px';
+
+            bodyOverflow.style.overflowY = 'scroll';
+
+            menuShadow.style.right = '-1050px';
         }
     }
 
     function hidden() {
         menuShow.checked = false;
-        document.querySelector('.menu').style.right = '-1050px';
+
+        menu.style.right = '-1050px';
+
+        bodyOverflow.style.overflowY = 'scroll';
+
+        menuShadow.style.right = '-1050px';
     }
 
     let anchors = document.querySelectorAll("a[href*='#']:not([href='#'])");
-    menuShow.addEventListener('click', menuFunction);
 
     for (let anchor of anchors) {
         anchor.addEventListener('click', function (e) {

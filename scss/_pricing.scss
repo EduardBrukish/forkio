@@ -37,6 +37,12 @@
         border: solid 6px #82769d;
         margin: 0;
         transition: 0.3s;
+
+        a {
+            background: linear-gradient(to bottom, #766b79 5%, #847688 100%);
+            background-color: #766b79;
+            color: #fff;
+        }
     }
 
     h3 {
@@ -89,7 +95,9 @@
 
 
         &:hover {
-            box-shadow: 0 0 8px #333;
+            background: linear-gradient(to bottom, #847688 5%, #766b79 100%);
+            background-color: #847688;
+
             transition: .3s ease;
         }
 
